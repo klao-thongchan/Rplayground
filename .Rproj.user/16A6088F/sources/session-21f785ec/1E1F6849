@@ -3,16 +3,16 @@
     "path": "~/Rplayground/GWS2024clustered.R",
     "project_path": "GWS2024clustered.R",
     "type": "r_source",
-    "hash": "3801188095",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1705331141167.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "36,0",
+        "cursorPosition": "18,52",
         "scrollLine": "2"
     },
     "folds": "",
@@ -20,7 +20,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1705331244939,
+    "last_content_update": 1705726566821,
     "read_only": false,
     "read_only_alternatives": []
 }
