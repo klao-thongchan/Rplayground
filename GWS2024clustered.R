@@ -16,8 +16,8 @@ summary(gameplay_kmeans_model)
 
 satisfaction_assignments <- satisfaction_kmeans_model$cluster
 gameplay_assignments <- gameplay_kmeans_model$cluster
-data$cluster_sat <- satisfaction_assignments
-data$cluster_game <- gameplay_assignments
+satisfaction$cluster_sat <- satisfaction_assignments
+gameplay$cluster_game <- gameplay_assignments
 
 
 # Summary statistics for each cluster
@@ -25,8 +25,8 @@ sat_summary_mean <- aggregate(data, by = list(cluster = satisfaction_assignments
 game_summary_mean <- aggregate(data, by = list(cluster = gameplay_assignments), mean)
 
 #get cluster data
-sat_data <- data[, c(1, which(colnames(data) == "cluster_sat"))]
-game_data <- data[, c(1, which(colnames(data) == "cluster_game"))]
+sat_data <- satisfaction[, c(1, which(colnames(data) == "cluster_sat"))]
+game_data <- gameplay[, c(1, which(colnames(data) == "cluster_game"))]
 
 #export
 write.csv(sat_data, file = "GWS_sat_data_2groups.csv")
